@@ -33,6 +33,22 @@ export default function Signin(): JSX.Element {
   useEffect(() => {
     if (isInitialized && user) {
       router.replace("/profile");
+
+      return;
+    }
+
+    const oauthGoogle = document.getElementById("oauth-google");
+
+    if (oauthGoogle) {
+      const span = oauthGoogle.getElementsByTagName("span");
+
+      span[0].innerHTML = "Google でログイン";
+    }
+
+    const submit = document.getElementById("submit");
+
+    if (submit) {
+      submit.innerHTML = "ログイン";
     }
   }, [user, isInitialized, router]);
 
