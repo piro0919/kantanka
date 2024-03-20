@@ -6,7 +6,7 @@ export const revalidate = 3600;
 export default async function Page(): Promise<JSX.Element> {
   const tanka = await prisma.tanka.findMany({
     orderBy: {
-      createdAt: "asc",
+      createdAt: "desc",
     },
     take: 100,
   });
