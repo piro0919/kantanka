@@ -11,14 +11,12 @@ export type AppProps = {
 
 export default function App({ tankaList }: AppProps): JSX.Element {
   return (
-    <div>
-      <ul className={styles.list}>
-        {tankaList.map(({ id, text }) => (
-          <li className={styles.item} key={id}>
-            <p>{text}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <ul className={styles.list}>
+      {tankaList.map(({ id, text }) => (
+        <li className={styles.item} key={id}>
+          <p>{text}</p>
+        </li>
+      ))}
+    </ul>
   );
 }

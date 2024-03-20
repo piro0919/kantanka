@@ -1,7 +1,9 @@
 "use client";
 import { useStytch, useStytchUser } from "@stytch/nextjs";
 import { useRouter, useSearchParams } from "next/navigation";
-import { Fragment, useEffect } from "react";
+import { useEffect } from "react";
+import { Oval } from "react-loader-spinner";
+import styles from "./style.module.scss";
 
 const OAUTH_TOKEN = "oauth";
 const MAGIC_LINKS_TOKEN = "magic_links";
@@ -69,5 +71,15 @@ export default function Authenticate({
     callback();
   }, [router, user, isInitialized, findUser, createUser]);
 
-  return <Fragment />;
+  return (
+    <div className={styles.wrapper}>
+      <Oval
+        ariaLabel="oval-loading"
+        color="#444"
+        height="64"
+        visible={true}
+        width="64"
+      />
+    </div>
+  );
 }

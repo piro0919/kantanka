@@ -1,6 +1,8 @@
 import App, { AppProps } from "@/components/App";
 import prisma from "@/lib/prisma";
 
+export const revalidate = 3600;
+
 export default async function Page(): Promise<JSX.Element> {
   const tanka = await prisma.tanka.findMany({
     orderBy: {

@@ -1,6 +1,7 @@
 // eslint-disable-next-line filenames/match-exported
 import type { Metadata } from "next";
 import { Shippori_Antique_B1 as ShipporiAntiqueB1 } from "next/font/google";
+import NextTopLoader from "nextjs-toploader";
 import "react-modern-drawer/dist/index.css";
 import "ress";
 import "./globals.scss";
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={shipporiAntiqueB1.className}>
+        <NextTopLoader />
         <Layout>{children}</Layout>
       </body>
     </html>

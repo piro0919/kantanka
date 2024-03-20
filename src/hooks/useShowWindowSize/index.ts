@@ -42,7 +42,7 @@ export default function useShowWindowSize(): void {
   });
 
   useEffect(() => {
-    if (!block) {
+    if (!block || process.env.NODE_ENV !== "development") {
       return;
     }
 

@@ -1,3 +1,4 @@
+import { revalidatePath } from "next/cache";
 import TankaNew, { TankaNewProps } from "@/components/TankaNew";
 import prisma from "@/lib/prisma";
 
@@ -11,6 +12,8 @@ export default function Page(): JSX.Element {
         text,
       },
     });
+
+    revalidatePath("/");
   };
 
   return <TankaNew sendTanka={sendTanka} />;
