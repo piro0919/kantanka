@@ -1,0 +1,27 @@
+.list {
+  display: grid;
+  grid-template: auto / repeat(2, 1fr);
+  @media (width < 740px) {
+    gap: 12px;
+    padding: 12px 0;
+  }
+  @media (740px <= width) {
+    gap: 24px;
+    padding: 24px 0;
+  }
+}
+
+.item {
+  background: #fff;
+  filter: drop-shadow(2px 2px 2px #888);
+  font-size: 3rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-all;
+  @media (width < 740px) {
+    padding: 12px;
+  }
+  @media (740px <= width) {
+    padding: 24px;
+  }
+}

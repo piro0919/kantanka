@@ -1,0 +1,57 @@
+.header {
+  align-items: center;
+  display: flex;
+  @media (width < 740px) {
+    padding: 12px 24px;
+  }
+  @media (740px <= width) {
+    padding: 24px 48px;
+  }
+}
+
+.topWrapper {
+  align-items: center;
+  display: flex;
+  @media (width < 740px) {
+    gap: 12px;
+  }
+  @media (740px <= width) {
+    gap: 24px;
+  }
+}
+
+.menuButton {
+  height: 24px;
+  width: 24px;
+}
+
+.burger {
+  align-items: center;
+  border-left: 2px solid #444;
+  border-right: 2px solid #444;
+  display: flex;
+  height: 24px;
+  position: relative;
+  width: 20px;
+}
+
+.burger::before {
+  background: #444;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 2px;
+}
+
+.h1 {
+  font-size: 4.8rem;
+}
+
+.button {
+  background: #444;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 24px 12px;
+}

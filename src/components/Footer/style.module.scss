@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  @media (width < 740px) {
+    padding: 12px;
+  }
+  @media (740px <= width) {
+    padding: 24px;
+  }
+}
+
+.copyright {
+  font-size: 1.4rem;
+}

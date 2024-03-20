@@ -1,0 +1,77 @@
+.frameRows,
+.frameLeft,
+.frameRight {
+  position: fixed;
+}
+
+.frameRows {
+  border-bottom: 4px solid #000;
+  border-top: 4px solid #000;
+  inset: 0 calc(var(--border-width) - 4px);
+}
+
+.frameRows::before,
+.frameRows::after {
+  background: #7f7a5c;
+  content: "";
+  display: block;
+  height: calc(var(--border-width) - 4px);
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.frameRows::before {
+  border-bottom: 4px solid #000;
+  top: 0;
+}
+
+.frameRows::after {
+  border-top: 4px solid #000;
+  bottom: 0;
+}
+
+.frameLeft,
+.frameRight {
+  background: #7f7a5c;
+  border-bottom: 4px solid #000;
+  border-top: 4px solid #000;
+  height: 100%;
+  top: 0;
+  width: var(--border-width);
+}
+
+.frameLeft {
+  border-right: 4px solid #000;
+  right: 0;
+}
+
+.frameRight {
+  border-left: 4px solid #000;
+  left: 0;
+}
+
+.frameLeft::before,
+.frameRight::before {
+  background: #000;
+  content: "";
+  display: block;
+  height: calc(100% - (var(--border-width) - 8px) * 2);
+  position: absolute;
+  top: calc(var(--border-width) - 8px);
+  width: 4px;
+}
+
+.frameLeft::before {
+  left: 0;
+}
+
+.frameRight::before {
+  right: 0;
+}
+
+.contentBlock {
+  min-width: 100dvw;
+  padding: var(--border-width);
+  position: relative;
+}
