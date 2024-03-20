@@ -6,6 +6,10 @@ export default function useShowWindowSize(): void {
   const [windowSize, setWindowSize] = useState({ height: 0, width: 0 });
 
   useEffect(() => {
+    if (process.env.NODE_ENV !== "development") {
+      return;
+    }
+
     const block = document.body.appendChild(document.createElement("div"));
 
     block.style.background = "#fff";
