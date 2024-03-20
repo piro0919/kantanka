@@ -80,6 +80,7 @@
     "lint:fix": "next lint --fix",
     "lint:style": "stylelint --fix '**/*.scss'",
     "postbuild": "next-sitemap",
+    "prebuild": "npx prisma generate",
     "prepare": "husky",
     "prettier": "prettier --write .",
     "start": "next start",
