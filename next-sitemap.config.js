@@ -2,6 +2,6 @@
 module.exports = {
   changefreq: "daily",
   generateRobotsTxt: true,
-  siteUrl: "",
+  siteUrl: "https://kantanka.kk-web.link/",
   sitemapSize: 5000,
 };
