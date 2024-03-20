@@ -3,6 +3,7 @@ import { StytchLogin, useStytchUser } from "@stytch/nextjs";
 import { OAuthProviders, Products } from "@stytch/vanilla-js";
 import { useRouter } from "next/navigation";
 import React, { ComponentProps, useEffect } from "react";
+import { useBoolean, useInterval } from "usehooks-ts";
 import styles from "./style.module.scss";
 import getDomainFromWindow from "@/lib/getDomainFromWindow";
 
@@ -29,6 +30,7 @@ export default function Signin(): JSX.Element {
     },
     products: [Products.emailMagicLinks, Products.oauth],
   };
+  const { setTrue, value } = useBoolean(false);
 
   useEffect(() => {
     if (isInitialized && user) {
@@ -36,24 +38,35 @@ export default function Signin(): JSX.Element {
 
       return;
     }
-
-    const oauthGoogle = document.getElementById("oauth-google");
-
-    if (oauthGoogle) {
-      const span = oauthGoogle.getElementsByTagName("span");
-
-      span[0].innerHTML = "Google でログイン";
-    }
-
-    const submit = document.getElementById("submit");
-
-    if (submit) {
-      submit.innerHTML = "ログイン";
-    }
   }, [user, isInitialized, router]);
 
+  useInterval(
+    () => {
+      const oauthGoogle = document.getElementById("oauth-google");
+
+      if (!oauthGoogle) {
+        return;
+      }
+
+      if (oauthGoogle) {
+        const span = oauthGoogle.getElementsByTagName("span");
+
+        span[0].innerHTML = "Google でログイン";
+      }
+
+      const submit = document.getElementById("submit");
+
+      if (submit) {
+        submit.innerHTML = "ログイン";
+      }
+
+      setTrue();
+    },
+    value ? null : 250,
+  );
+
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.wrapper} style={{ opacity: value ? 1 : 0 }}>
       <StytchLogin config={config} styles={stytchLoginStyles} />
     </div>
   );

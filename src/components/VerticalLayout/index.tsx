@@ -1,4 +1,5 @@
 "use client";
+import NoSSR from "@mpth/react-no-ssr";
 import { ReactNode } from "react";
 import { useBoolean } from "usehooks-ts";
 import Drawer from "../Drawer";
@@ -22,7 +23,9 @@ export default function VerticalLayout({
         <main>{children}</main>
         <Footer />
       </div>
-      <Drawer onClose={offOpen} open={open} />
+      <NoSSR>
+        <Drawer onClose={offOpen} open={open} />
+      </NoSSR>
     </>
   );
 }
