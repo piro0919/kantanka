@@ -1,6 +1,8 @@
 import Authenticate, { AuthenticateProps } from "@/components/Authenticate";
 import prisma from "@/lib/prisma";
 
+export const revalidate = 0;
+
 export default function Page(): JSX.Element {
   const createUser: AuthenticateProps["createUser"] = async ({ userId }) => {
     "use server";
