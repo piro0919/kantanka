@@ -19,6 +19,7 @@ export default function Drawer({ onClose, open }: DrawerProps): JSX.Element {
         <div className={styles.wrapper}>
           {user ? (
             <button
+              className={styles.button}
               // eslint-disable-next-line @typescript-eslint/no-misused-promises
               onClick={async () => {
                 await stytch.session.revoke();
@@ -28,15 +29,16 @@ export default function Drawer({ onClose, open }: DrawerProps): JSX.Element {
                 router.push("/");
               }}
             >
-              ログアウト
+              <span>ログアウト</span>
             </button>
           ) : (
             <button
+              className={styles.button}
               onClick={() => {
                 router.push("/signin");
               }}
             >
-              ログイン
+              <span>ログイン</span>
             </button>
           )}
         </div>

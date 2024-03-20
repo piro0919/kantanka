@@ -84,7 +84,7 @@ export default function TankaNew({ sendTanka }: TankaNewProps): JSX.Element {
             )}
           />
           <button className={styles.button} type="submit">
-            投稿する
+            <span>投稿する</span>
           </button>
         </div>
       </form>

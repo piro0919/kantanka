@@ -46,6 +46,11 @@
   background: #444;
   border-radius: 6px;
   color: #fff;
+  display: grid;
   font-size: 1.8rem;
   padding: 24px 12px;
+}
+
+.button span {
+  writing-mode: vertical-rl;
 }

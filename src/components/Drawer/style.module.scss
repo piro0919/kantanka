@@ -1,7 +1,15 @@
 .wrapper {
   align-items: center;
   display: flex;
-  font-size: 1.8rem;
   padding: 24px;
   width: 100%;
+}
+
+.button {
+  display: grid;
+  font-size: 1.8rem;
+}
+
+.button span {
+  writing-mode: vertical-rl;
 }

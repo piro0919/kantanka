@@ -22,7 +22,7 @@ body {
   color: #444;
   font-family: arial, sans-serif;
   line-height: 1.25;
-  overflow-y: hidden;
+  overflow: hidden;
   writing-mode: vertical-rl;
 }
 
@@ -59,4 +59,9 @@ textarea {
 ol,
 ul {
   list-style: none;
+}
+
+.ScrollbarsCustom {
+  height: 100dvh !important;
+  width: 100dvw !important;
 }

@@ -7,6 +7,7 @@
 .frameRows {
   border-bottom: 4px solid #000;
   border-top: 4px solid #000;
+  height: 100dvh;
   inset: 0 calc(var(--border-width) - 4px);
 }
 
@@ -36,7 +37,7 @@
   background: #7f7a5c;
   border-bottom: 4px solid #000;
   border-top: 4px solid #000;
-  height: 100%;
+  height: 100dvh;
   top: 0;
   width: var(--border-width);
 }
@@ -71,6 +72,7 @@
 }
 
 .contentBlock {
+  height: 100dvh;
   min-width: 100dvw;
   padding: var(--border-width);
   position: relative;

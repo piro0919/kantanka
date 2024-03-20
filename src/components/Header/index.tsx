@@ -29,7 +29,7 @@ export default function Header({ onOpen }: HeaderProps): JSX.Element {
           router.push("/tanka/new");
         }}
       >
-        投稿する
+        <span>投稿する</span>
       </button>
     </header>
   );
