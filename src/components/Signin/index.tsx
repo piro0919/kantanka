@@ -17,18 +17,12 @@ export default function Signin(): JSX.Element {
     hideHeaderText: true,
   };
   const config: ComponentProps<typeof StytchLogin>["config"] = {
-    emailMagicLinksOptions: {
-      loginExpirationMinutes: 5,
-      loginRedirectURL: `${getDomainFromWindow()}/authenticate`,
-      signupExpirationMinutes: 5,
-      signupRedirectURL: `${getDomainFromWindow()}/authenticate`,
-    },
     oauthOptions: {
       loginRedirectURL: `${getDomainFromWindow()}/authenticate`,
       providers: [{ type: OAuthProviders.Google }],
       signupRedirectURL: `${getDomainFromWindow()}/authenticate`,
     },
-    products: [Products.emailMagicLinks, Products.oauth],
+    products: [Products.oauth],
   };
   const { setTrue, value } = useBoolean(false);
 
@@ -52,12 +46,6 @@ export default function Signin(): JSX.Element {
         const span = oauthGoogle.getElementsByTagName("span");
 
         span[0].innerHTML = "Google でログイン";
-      }
-
-      const submit = document.getElementById("submit");
-
-      if (submit) {
-        submit.innerHTML = "ログイン";
       }
 
       setTrue();
