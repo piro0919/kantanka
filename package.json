@@ -67,7 +67,7 @@
   "name": "kantanka2",
   "overrides": {
     "eslint-config-next": {
-      "@typescript-eslint/parser": "7.7.0"
+      "@typescript-eslint/parser": "7.7.1"
     },
     "stylelint-css-modules-no-global-scoped-selector": {
       "stylelint": "16.2.1"
