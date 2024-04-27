@@ -8,8 +8,7 @@
   "plugins": [
     "stylelint-css-modules-no-global-scoped-selector",
     "stylelint-declaration-block-no-ignored-properties",
-    "stylelint-order",
-    "stylelint-sass-render-errors"
+    "stylelint-order"
   ],
   "rules": {
     "css-modules/no-global-scoped-selector": [
@@ -20,7 +19,6 @@
     ],
     "order/properties-alphabetical-order": true,
     "plugin/declaration-block-no-ignored-properties": true,
-    "plugin/sass-render-errors": true,
     "selector-class-pattern": null
   }
 }

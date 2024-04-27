@@ -61,7 +61,6 @@
     "stylelint-css-modules-no-global-scoped-selector": "1.0.2",
     "stylelint-declaration-block-no-ignored-properties": "2.8.0",
     "stylelint-order": "6.0.4",
-    "stylelint-sass-render-errors": "4.0.0",
     "typescript": "^5"
   },
   "name": "kantanka2",

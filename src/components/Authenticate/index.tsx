@@ -6,7 +6,6 @@ import { Oval } from "react-loader-spinner";
 import styles from "./style.module.scss";
 
 const OAUTH_TOKEN = "oauth";
-const MAGIC_LINKS_TOKEN = "magic_links";
 
 export type AuthenticateProps = {
   createUser: (args: { userId: string }) => Promise<void>;
@@ -23,26 +22,21 @@ export default function Authenticate({
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    if (stytch && !user && isInitialized) {
-      const token = searchParams.get("token");
-      const stytchTokenType = searchParams.get("stytch_token_type");
+    const callback = async (): Promise<void> => {
+      if (stytch && !user && isInitialized) {
+        const token = searchParams.get("token");
+        const stytchTokenType = searchParams.get("stytch_token_type");
 
-      if (token && stytchTokenType === OAUTH_TOKEN) {
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        stytch.oauth.authenticate(token, {
-          session_duration_minutes: 60,
-        });
-
-        return;
+        if (token && stytchTokenType === OAUTH_TOKEN) {
+          await stytch.oauth.authenticate(token, {
+            session_duration_minutes: 527040,
+          });
+        }
       }
+    };
 
-      if (token && stytchTokenType === MAGIC_LINKS_TOKEN) {
-        // eslint-disable-next-line @typescript-eslint/no-floating-promises
-        stytch.magicLinks.authenticate(token, {
-          session_duration_minutes: 60,
-        });
-      }
-    }
+    // eslint-disable-next-line @typescript-eslint/no-floating-promises
+    callback();
   }, [isInitialized, router, searchParams, stytch, user]);
 
   useEffect(() => {

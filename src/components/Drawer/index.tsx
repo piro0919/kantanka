@@ -1,4 +1,4 @@
-import { useStytch, useStytchUser } from "@stytch/nextjs";
+import { useStytchUser } from "@stytch/nextjs";
 import { useRouter } from "next/navigation";
 import ReactModernDrawer from "react-modern-drawer";
 import styles from "./style.module.scss";
@@ -9,7 +9,6 @@ export type DrawerProps = {
 };
 
 export default function Drawer({ onClose, open }: DrawerProps): JSX.Element {
-  const stytch = useStytch();
   const router = useRouter();
   const { isInitialized, user } = useStytchUser();
 
@@ -20,13 +19,8 @@ export default function Drawer({ onClose, open }: DrawerProps): JSX.Element {
           {user ? (
             <button
               className={styles.button}
-              // eslint-disable-next-line @typescript-eslint/no-misused-promises
-              onClick={async () => {
-                await stytch.session.revoke();
-
-                onClose();
-
-                router.push("/");
+              onClick={() => {
+                router.push("/signout");
               }}
             >
               <span>ログアウト</span>
