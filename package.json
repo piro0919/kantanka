@@ -5,8 +5,8 @@
     "@mpth/react-no-ssr": "1.0.1",
     "@prisma/client": "5.13.0",
     "@stytch/nextjs": "19.0.0",
-    "@stytch/vanilla-js": "4.11.0",
-    "i18next": "23.11.3",
+    "@stytch/vanilla-js": "4.11.1",
+    "i18next": "23.11.4",
     "next": "14.2.3",
     "nextjs-toploader": "1.6.12",
     "react": "^18",
@@ -19,7 +19,7 @@
     "ress": "5.0.2",
     "stytch": "10.15.1",
     "usehooks-ts": "3.1.0",
-    "zod": "3.23.6",
+    "zod": "3.23.8",
     "zod-i18n-map": "2.27.0"
   },
   "devDependencies": {
