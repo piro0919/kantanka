@@ -1,11 +1,11 @@
 {
   "dependencies": {
     "@hookform/error-message": "2.0.1",
-    "@hookform/resolvers": "3.3.4",
+    "@hookform/resolvers": "3.4.0",
     "@mpth/react-no-ssr": "1.0.1",
-    "@prisma/client": "5.13.0",
+    "@prisma/client": "5.14.0",
     "@stytch/nextjs": "19.0.0",
-    "@stytch/vanilla-js": "4.11.1",
+    "@stytch/vanilla-js": "4.11.2",
     "i18next": "23.11.4",
     "next": "14.2.3",
     "nextjs-toploader": "1.6.12",
