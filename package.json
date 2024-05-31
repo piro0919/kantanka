@@ -5,7 +5,7 @@
     "@mpth/react-no-ssr": "1.0.1",
     "@prisma/client": "5.14.0",
     "@stytch/nextjs": "19.0.0",
-    "@stytch/vanilla-js": "4.11.2",
+    "@stytch/vanilla-js": "4.11.3",
     "i18next": "23.11.5",
     "next": "14.2.3",
     "nextjs-toploader": "1.6.12",
