@@ -4,7 +4,7 @@
     "@hookform/resolvers": "3.6.0",
     "@mpth/react-no-ssr": "1.0.1",
     "@prisma/client": "5.15.0",
-    "@stytch/nextjs": "19.0.0",
+    "@stytch/nextjs": "20.0.0",
     "@stytch/vanilla-js": "4.12.0",
     "i18next": "23.11.5",
     "next": "14.2.3",
