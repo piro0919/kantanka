@@ -7,7 +7,7 @@
     "@stytch/nextjs": "20.3.3",
     "@stytch/vanilla-js": "4.18.2",
     "i18next": "24.2.0",
-    "next": "15.1.2",
+    "next": "15.1.3",
     "nextjs-toploader": "3.7.15",
     "react": "^18",
     "react-dom": "^18",
