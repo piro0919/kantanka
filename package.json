@@ -3,7 +3,7 @@
     "@hookform/error-message": "2.0.1",
     "@hookform/resolvers": "3.10.0",
     "@mpth/react-no-ssr": "1.0.1",
-    "@prisma/client": "6.2.1",
+    "@prisma/client": "6.3.0",
     "@stytch/nextjs": "20.3.3",
     "@stytch/vanilla-js": "4.18.2",
     "i18next": "24.2.2",
