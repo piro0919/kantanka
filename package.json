@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@hookform/error-message": "2.0.1",
-    "@hookform/resolvers": "4.0.0",
+    "@hookform/resolvers": "4.1.0",
     "@mpth/react-no-ssr": "1.0.1",
     "@prisma/client": "6.3.1",
     "@stytch/nextjs": "20.3.3",
