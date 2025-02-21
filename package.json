@@ -3,7 +3,7 @@
     "@hookform/error-message": "2.0.1",
     "@hookform/resolvers": "4.1.0",
     "@mpth/react-no-ssr": "1.0.1",
-    "@prisma/client": "6.3.1",
+    "@prisma/client": "6.4.1",
     "@stytch/nextjs": "20.3.3",
     "@stytch/vanilla-js": "4.18.2",
     "i18next": "24.2.2",
@@ -17,7 +17,7 @@
     "react-scrollbars-custom": "4.1.1",
     "react-spacer": "1.3.0",
     "ress": "5.0.2",
-    "stytch": "12.5.0",
+    "stytch": "12.7.0",
     "usehooks-ts": "3.1.1",
     "zod": "3.24.2",
     "zod-i18n-map": "2.27.0"
