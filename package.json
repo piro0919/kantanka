@@ -69,7 +69,7 @@
       "@typescript-eslint/parser": "7.18.0"
     },
     "stylelint-css-modules-no-global-scoped-selector": {
-      "stylelint": "16.2.1"
+      "stylelint": "16.15.0"
     }
   },
   "private": true,
