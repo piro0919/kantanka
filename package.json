@@ -6,7 +6,7 @@
     "@prisma/client": "6.4.1",
     "@stytch/nextjs": "20.3.3",
     "@stytch/vanilla-js": "4.18.2",
-    "i18next": "24.2.2",
+    "i18next": "25.10.10",
     "next": "15.2.0",
     "nextjs-toploader": "3.7.15",
     "react": "^18",
