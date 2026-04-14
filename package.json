@@ -26,7 +26,7 @@
     "@commitlint/cli": "19.0.3",
     "@commitlint/config-conventional": "19.0.3",
     "@total-typescript/ts-reset": "0.5.1",
-    "@types/node": "^22.0.0",
+    "@types/node": "^24.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "7.1.0",
