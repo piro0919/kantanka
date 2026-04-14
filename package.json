@@ -23,8 +23,8 @@
     "zod-i18n-map": "2.27.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "19.0.3",
-    "@commitlint/config-conventional": "19.0.3",
+    "@commitlint/cli": "20.5.0",
+    "@commitlint/config-conventional": "20.5.0",
     "@total-typescript/ts-reset": "0.5.1",
     "@types/node": "^22.0.0",
     "@types/react": "^19.0.0",
