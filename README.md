@@ -2,7 +2,7 @@
 
 > Simple tanka (Japanese short poetry) web app.
 
-[🔗 Live Site](https://kantanka.kk-web.link)
+[🔗 Live Site](https://kantanka.kkweb.io)
 
 ## ✨ Features
 
