@@ -6,7 +6,7 @@
 
 ## ✨ Features
 
-- ✍️ Write and browse 短歌 (tanka)
+- ✍️ Write and browse tanka
 - 🔐 Stytch-based authentication
 - 💾 Prisma-backed storage
 
@@ -23,3 +23,7 @@
 pnpm install
 pnpm dev
 ```
+
+## 📄 License
+
+MIT
