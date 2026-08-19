@@ -36,7 +36,10 @@ export async function middleware(request: NextRequest): Promise<NextResponse> {
 }
 
 export const config = {
+  // icon.png などの metadata ルートも除外する。favicon.ico しか
+  // 挙げていなかったため、未ログイン時に /signin へ飛ばされて
+  // アイコンの代わりにサインイン画面の HTML が返っていた。
   matcher: [
-    "/((?!api|_next/static|_next/image|favicon.ico|authenticate|signin|signout).*)",
+    "/((?!api|_next/static|_next/image|favicon.ico|icon.png|apple-icon.png|opengraph-image|twitter-image|robots.txt|sitemap.xml|authenticate|signin|signout).*)",
   ],
 };
