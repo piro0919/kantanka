@@ -26,7 +26,7 @@
     "@commitlint/cli": "19.0.3",
     "@commitlint/config-conventional": "19.0.3",
     "@total-typescript/ts-reset": "0.5.1",
-    "@types/node": "^22.0.0",
+    "@types/node": "^24.13.3",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@typescript-eslint/eslint-plugin": "7.1.0",
@@ -61,7 +61,7 @@
     "stylelint-css-modules-no-global-scoped-selector": "1.0.2",
     "stylelint-declaration-block-no-ignored-properties": "2.8.0",
     "stylelint-order": "6.0.4",
-    "typescript": "^5"
+    "typescript": "^7.0.2"
   },
   "name": "kantanka2",
   "overrides": {
