@@ -1,4 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>piro0919/renovate-config"]
+  "extends": ["github>piro0919/renovate-config"],
+  "enabled": false,
+  "description": "Disabled: the portfolio marks this service as archived, so dependency updates here have nothing to ship to."
 }
